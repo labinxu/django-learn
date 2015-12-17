@@ -17,10 +17,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 import mysite.views
+import users.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',mysite.views.first_page),
     # use the west/urls file
     url(r'^west/',include('west.urls')),
+    url(r'^users/', users.views.login)
 ]
