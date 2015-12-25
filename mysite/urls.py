@@ -20,7 +20,8 @@ import mysite.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',mysite.views.first_page),
+    url(r'^$', mysite.views.first_page),
     # use the west/urls file
-    url(r'^west/',include('west.urls')),
+    url(r'^west/', include('west.urls')),
+    url(r'^users/', include('users.urls'))
 ]
