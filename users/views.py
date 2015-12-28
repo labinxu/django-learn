@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 from django.shortcuts import render
-from django.contrib.auth import *
 from django.core.context_processors import csrf
-=======
 from django.shortcuts import render,render_to_response
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect
 from django.template import RequestContext
-
-from django.core.context_processors import csrf
 from django.contrib.auth import *
 
 # Create your views here.

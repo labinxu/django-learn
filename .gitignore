@@ -1,3 +1,4 @@
 west/__pycache__/
 west/migrations/__pycache__/
 mysite/__pycache__/
+*.pyc

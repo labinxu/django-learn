@@ -23,11 +23,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', mysite.views.first_page),
     # use the west/urls file
-<<<<<<< HEAD
     url(r'^west/', include('west.urls')),
     url(r'^users/', include('users.urls'))
-=======
-    url(r'^west/',include('west.urls')),
-    url(r'^users/', users.views.login)
->>>>>>> 7e4c08a0ad63e1073baec7437830e97b10241f4c
+    #url(r'^users/', users.views.login)
+
 ]
