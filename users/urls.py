@@ -4,4 +4,5 @@ import users.views
 
 urlpatterns = [
     url('^login/', users.views.user_login),
+    url('^logout/', users.views.user_logout),
 ]

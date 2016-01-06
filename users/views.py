@@ -22,6 +22,7 @@ def user_login(request):
         if user is not None and user.is_active:
             login(request, user)
             return redirect('/')
+    print('exit login')
     ctx = {}
     ctx.update(csrf(request))
     return render(request, 'login.html', ctx)
